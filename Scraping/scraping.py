@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 # Create the output file 
 output = open('output.csv','w')
 writer = csv.writer(output)
+writer.writerow(['county', 'clinton_pct', 'sanders_pct', 'cruz_pct', 'kasich_pct', 'trump_pct'])
 
 # Open the url
 br = mechanize.Browser()
@@ -54,4 +55,4 @@ for options in optionslist:
             if data[0] in ['Hillary Clinton', 'Bernie Sanders', 'Ted Cruz', 'John R. Kasich','Donald J. Trump']:
                 output.append(data[3]) 
 
-    print output
+    writer.writerow(output)
