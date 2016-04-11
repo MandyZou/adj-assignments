@@ -54,4 +54,4 @@ for options in optionslist:
             if data[0] in ['Hillary Clinton', 'Bernie Sanders', 'Ted Cruz', 'John R. Kasich','Donald J. Trump']:
                 output.append(data[3]) 
 
-        print output
+    print output
