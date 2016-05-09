@@ -8,7 +8,7 @@ I ended with two different versions of the application.
 (1) Combined version
 The problem of this version is that if you try so many times of the script, you will see the error of “4.7.0 Too many login attempts, please try again later.” If you have an administration account of the gmail, you can change the email limits.
 
-See the instruction: https://support.google.com/a/answer/2789146
+    See the instruction: https://support.google.com/a/answer/2789146
 
 (2) Separate version
 First, run the scrape code to get today’s changes.
