@@ -4,6 +4,7 @@ from urllib import urlencode
 from bs4 import BeautifulSoup
 import time
 from datetime import datetime
+import os
 
 output = open('BillChangew.csv','w')
 writer = csv.writer(output)
@@ -74,5 +75,7 @@ for bill in bills:
     if bill_date == today_time:
 
         writer.writerow([bill_print_id, bill_print_title, bill_date, bill_the_action])
+
+os.system('say "your program has finished"')
 
 
